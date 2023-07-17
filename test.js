@@ -3,7 +3,9 @@ import assert from "node:assert/strict";
 import fs from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import prettier from "prettier";
-import synchronizedPrettier, { createSynchronizedPrettier } from "./index.cjs";
+import synchronizedPrettier, {
+  createSynchronizedPrettier,
+} from "@prettier/sync";
 import fakePrettier from "./a-fake-prettier-to-test.cjs";
 
 test("format", async () => {
